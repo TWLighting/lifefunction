@@ -25,5 +25,3 @@ Route::post('/test_middleware', 'MainController@show');
 // Route::get('/','HomeController@indexPage');
 
 Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');

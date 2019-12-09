@@ -10,6 +10,7 @@ import "element-ui/lib/theme-chalk/index.css";
 import router from "./route";
 Vue.use(ElementUI);
 import App from "./App.vue";
+
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -18,8 +19,12 @@ import App from "./App.vue";
 
 Vue.component("Cum", require("./components/Cum"));
 Vue.component("About", require("./components/About"));
+Vue.component("Test", require("./components/Test"));
+
+// 声明式渲染
 new Vue({
   el: "#app",
   router,
+  components: {},
   render: h => h(App)
 });

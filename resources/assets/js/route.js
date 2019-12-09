@@ -16,6 +16,10 @@ export default new VueRouter({
   //model :history //因為Vue router 會自動產生hashtag(#)，俗果你覺得礙事可以加入這行。
   routes: [
     {
+      path: "/Test", //路徑
+      component: require("./components/Test") //Component
+    },
+    {
       path: "/Cum", //路徑
       component: require("./components/Cum") //Component
     },

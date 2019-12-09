@@ -11,3 +11,48 @@
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
+.el-header {
+  color: #333;
+  line-height: 60px;
+  //cum.vue
+}
+.el-header.cum-header {
+  background-color: #b3c0d1;
+}
+.el-aside {
+  color: #333;
+}
+.albums {
+  position: relative;
+  display: inline-block;
+  outline: 1px solid #333;
+  width: 300px;
+  height: auto;
+  margin: 1rem 1rem;
+  overflow: hidden;
+}
+.albums img {
+  width: 300px;
+  height: 300px;
+}
+.albums .inalbums {
+  position: absolute;
+  z-index: 5;
+  margin-top: 100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(31, 25, 24, 0.6);
+  transition: margin-top 0.4s ease-in 0s;
+}
+.albums:hover .inalbums {
+  margin-top: 0;
+}
+
+.albums_icon {
+  display: inline-block;
+  background: orange;
+  margin: 50% 1rem 0 1rem;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
