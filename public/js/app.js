@@ -115796,6 +115796,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -116203,11 +116219,7 @@ var render = function() {
                           _vm._v(" "),
                           _c("el-image", {
                             attrs: { src: data.img_url, fit: data.release_time }
-                          }),
-                          _vm._v(" "),
-                          _c("span", { staticClass: "text_center" }, [
-                            _vm._v(_vm._s(data.aldum_name))
-                          ])
+                          })
                         ],
                         1
                       )
