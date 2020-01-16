@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@import url(https://fonts.googleapis.com/css?family=Anton|Ma+Shan+Zheng|Noto+Sans+TC:500&display=swap);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@charset "UTF-8";
 
 /* icon font path, required */
 
@@ -510,7 +510,7 @@
 
 @font-face {
   font-family: 'element-icons';
-  src: url(/fonts/vendor/element-ui/lib/theme-chalk/element-icons.woff?535877f50039c0cb49a6196a5b7517cd) format("woff"), url(/fonts/vendor/element-ui/lib/theme-chalk/element-icons.ttf?732389ded34cb9c52dd88271f1345af9) format("truetype");
+  src: url(../../fonts/vendor/element-ui/lib/theme-chalk/element-icons.woff?535877f50039c0cb49a6196a5b7517cd) format("woff"), url(../../fonts/vendor/element-ui/lib/theme-chalk/element-icons.ttf?732389ded34cb9c52dd88271f1345af9) format("truetype");
   /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
   font-weight: normal;
   font-display: "auto";
@@ -98708,11 +98708,16 @@ a.text-dark:focus {
 .albums {
   position: relative;
   display: inline-block;
-  width: 178px;
+  outline: 1px solid #333;
+  width: 300px;
   height: auto;
   margin: 1rem 1rem;
   overflow: hidden;
-  background-size: cover;
+}
+
+.albums img {
+  width: 300px;
+  height: 300px;
 }
 
 .albums .inalbums {
@@ -98721,9 +98726,9 @@ a.text-dark:focus {
   margin-top: 100%;
   width: 100%;
   height: 100%;
+  background: rgba(31, 25, 24, 0.6);
   -webkit-transition: margin-top 0.4s ease-in 0s;
   transition: margin-top 0.4s ease-in 0s;
-  background: rgba(31, 25, 24, 0.6);
 }
 
 .albums:hover .inalbums {
@@ -98733,39 +98738,9 @@ a.text-dark:focus {
 .albums_icon {
   display: inline-block;
   background: orange;
-  margin: 50% 2px 0 2px;
+  margin: 50% 1rem 0 1rem;
   border-radius: 50%;
   width: 3rem;
   height: 3rem;
-}
-
-.super-banner {
-  width: 100%;
-  height: auto;
-  background-image: url("https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-  background-size: cover;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  text-align: center;
-  color: #fff;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.super-banner h1 {
-  font-weight: 600;
-  padding: 300px;
-}
-
-.Anton {
-  font-family: "Anton", sans-serif;
-}
-
-.SansTC {
-  font-family: "Noto Sans TC", sans-serif;
-}
-
-.ShanZheng {
-  font-family: "Ma Shan Zheng", cursive;
 }
 

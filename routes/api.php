@@ -35,6 +35,11 @@ Route::group(['prefix' => 'user'], function () {
     });
 });
 
+Route::group(['prefix' => 'album'], function () {
+    Route::get('/getall', 'AlbumsController@getsllalbums');
+    Route::post('/getalbums', 'AlbumsController@getalbums');
+    Route::get('/getHot', 'AlbumsController@getHotAlbums');
+});
 
 
 //商品
