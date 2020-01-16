@@ -62,6 +62,7 @@
             </div>
             <!-- <el-avatar :size="60" :src="'https://picsum.photos/60?random'+item"></el-avatar> -->
             <el-image :src="data.img_url" :fit="data.release_time" />
+            <span class="text_center">{{ data.aldum_name }}</span>
           </li>
         </ul>
       </el-row>
