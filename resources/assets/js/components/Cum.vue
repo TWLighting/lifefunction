@@ -17,7 +17,7 @@
         <el-col :span="4" :offset="14">
           <el-button-group>
             <el-button type="primary" disabled="{`true`}">
-              <i class="el-icon-arrow-right el-icon--lift"></i>
+              <i class="el-icon-arrow-lift el-icon--lift"></i>
             </el-button>
             <el-button type="primary">
               <i class="el-icon-arrow-right el-icon--right"></i>
@@ -25,44 +25,32 @@
           </el-button-group>
         </el-col>
       </el-row>
-      <el-row
-        type="flex"
-        class="row-bg SansTC"
-        justify="pace-between"
-        wrap="wrap"
-      >
+      <el-row type="flex" class="row-bg SansTC" justify="pace-between" wrap="wrap">
         <ul>
           <template>
             <div></div>
           </template>
-          <li
-            class="albums"
-            v-for="(data, key) in getalbumdata[0][areadata.code]"
-          >
-            <div class="inalbums" justify="pace-between" align="middle">
-              <el-tooltip content="介紹" placement="bottom">
-                <span
-                  class="albums_icon"
-                  @click="clickicon(data.aldums_id, 1)"
-                ></span>
-              </el-tooltip>
-
-              <el-tooltip content="視聽" placement="bottom">
-                <span
-                  class="albums_icon"
-                  @click="clickicon(data.aldums_id, 2)"
-                ></span>
-              </el-tooltip>
-              <el-tooltip content="詳細" placement="bottom">
-                <span
-                  class="albums_icon"
-                  @click="clickicon(data.aldums_id, 3)"
-                ></span>
-              </el-tooltip>
+          <li class="albums" v-for="(data, key) in getalbumdata[0][areadata.code]">
+            <div class="inalbums">
+              <div justify="space-between" align="middle">
+                <marquee>
+                  <h4 wrap="nowrap">{{ data.aldum_name }}</h4>
+                </marquee>
+              </div>
+              <div class="simple-control" justify="pace-between" align="middle">
+                <el-tooltip content="介紹" placement="bottom">
+                  <span class="albums_icon" @click="clickicon(data.aldums_id, 1)"></span>
+                </el-tooltip>
+                <el-tooltip content="視聽" placement="bottom">
+                  <span class="albums_icon" @click="clickicon(data.aldums_id, 2)"></span>
+                </el-tooltip>
+                <el-tooltip content="詳細" placement="bottom">
+                  <span class="albums_icon" @click="clickicon(data.aldums_id, 3)"></span>
+                </el-tooltip>
+              </div>
             </div>
             <!-- <el-avatar :size="60" :src="'https://picsum.photos/60?random'+item"></el-avatar> -->
             <el-image :src="data.img_url" :fit="data.release_time" />
-            <span class="text_center">{{ data.aldum_name }}</span>
           </li>
         </ul>
       </el-row>

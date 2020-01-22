@@ -23,6 +23,8 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "element-ui": "^2.13.0",
-    "fs": "0.0.1-security"
+    "file-loader": "^5.0.2",
+    "fs": "0.0.1-security",
+    "url-loader": "^3.0.0"
   }
 }
