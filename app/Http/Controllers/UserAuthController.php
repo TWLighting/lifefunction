@@ -34,12 +34,14 @@ class UserAuthController extends Controller
     public function signInPage()
     {
         $data = DB::table('userinfo')->select()->first();
-        var_dump($data->username);
+        return json_encode($data);
     }
 
     public function signInProcess()
-    { }
+    {
+    }
 
     public function signOut()
-    { }
+    {
+    }
 }

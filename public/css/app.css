@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@import url(https://fonts.googleapis.com/css?family=Anton|Ma+Shan+Zheng|Noto+Sans+TC:500&display=swap);@charset "UTF-8";
 
 /* icon font path, required */
 
@@ -510,7 +510,7 @@
 
 @font-face {
   font-family: 'element-icons';
-  src: url(/fonts/vendor/element-ui/lib/theme-chalk/element-icons.woff?535877f50039c0cb49a6196a5b7517cd) format("woff"), url(/fonts/vendor/element-ui/lib/theme-chalk/element-icons.ttf?732389ded34cb9c52dd88271f1345af9) format("truetype");
+  src: url([object Object]) format("woff"), url([object Object]) format("truetype");
   /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
   font-weight: normal;
   font-display: "auto";
@@ -86755,7 +86755,7 @@
 }
 
 /*!
- * Bootstrap v4.4.0 (https://getbootstrap.com/)
+ * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
@@ -89446,7 +89446,8 @@ textarea.form-control {
   margin-left: -1.25rem;
 }
 
-.form-check-input[disabled] ~ .form-check-label {
+.form-check-input[disabled] ~ .form-check-label,
+.form-check-input:disabled ~ .form-check-label {
   color: #6c757d;
 }
 
@@ -91242,11 +91243,13 @@ input[type="button"].btn-block {
   border-color: #b3d7ff;
 }
 
-.custom-control-input[disabled] ~ .custom-control-label {
+.custom-control-input[disabled] ~ .custom-control-label,
+.custom-control-input:disabled ~ .custom-control-label {
   color: #6c757d;
 }
 
-.custom-control-input[disabled] ~ .custom-control-label::before {
+.custom-control-input[disabled] ~ .custom-control-label::before,
+.custom-control-input:disabled ~ .custom-control-label::before {
   background-color: #e9ecef;
 }
 
@@ -91448,7 +91451,8 @@ input[type="button"].btn-block {
           box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-.custom-file-input[disabled] ~ .custom-file-label {
+.custom-file-input[disabled] ~ .custom-file-label,
+.custom-file-input:disabled ~ .custom-file-label {
   background-color: #e9ecef;
 }
 
@@ -98682,6 +98686,10 @@ a.text-dark:focus {
   }
 }
 
+body {
+  background-color: #f3ab0899;
+}
+
 .navbar-laravel {
   background-color: #fff;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
@@ -98704,27 +98712,37 @@ a.text-dark:focus {
 .albums {
   position: relative;
   display: inline-block;
-  outline: 1px solid #333;
-  width: 300px;
-  height: auto;
-  margin: 1rem 1rem;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  background-color: blanchedalmond;
+  width: 178px;
+  height: 178px;
+  margin: 1vh;
   overflow: hidden;
-}
-
-.albums img {
-  width: 300px;
-  height: 300px;
+  padding: 10px;
+  background-size: cover;
+  color: aliceblue;
+  font-weight: 700;
 }
 
 .albums .inalbums {
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 5;
   margin-top: 100%;
   width: 100%;
-  height: 100%;
-  background: rgba(31, 25, 24, 0.6);
+  height: auto;
+  padding-bottom: 178px;
   -webkit-transition: margin-top 0.4s ease-in 0s;
   transition: margin-top 0.4s ease-in 0s;
+  background: rgba(31, 25, 24, 0.6);
+}
+
+.simple-control {
+  position: absolute;
+  top: 42%;
+  left: 0;
 }
 
 .albums:hover .inalbums {
@@ -98734,9 +98752,39 @@ a.text-dark:focus {
 .albums_icon {
   display: inline-block;
   background: orange;
-  margin: 50% 1rem 0 1rem;
+  margin: 50% 2px 0 2px;
   border-radius: 50%;
-  width: 3rem;
-  height: 3rem;
+  width: 30px;
+  height: 30px;
+}
+
+.super-banner {
+  width: 100%;
+  height: auto;
+  background-image: url("https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.super-banner h1 {
+  font-weight: 600;
+  padding: 300px;
+}
+
+.Anton {
+  font-family: "Anton", sans-serif;
+}
+
+.SansTC {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.ShanZheng {
+  font-family: "Ma Shan Zheng", cursive;
 }
 
